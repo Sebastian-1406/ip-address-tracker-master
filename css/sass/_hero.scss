@@ -5,7 +5,6 @@
     background-position: center;
     height: 250px;
     padding: 30px 25px;
-    
     h1 {
         font-size: 1.5em;
         text-align: center;
@@ -20,11 +19,12 @@
             width: 100%;
             padding: 15px;
             border-radius: 10px;
-            padding-left: 25px;
+            padding-left: 20px;
             border: none;
             outline: none;
+            cursor: pointer;
             &::placeholder {
-                font-size: 14px;
+                font-size: 13px;
             }
         }
         .boton-buscar {
@@ -40,6 +40,11 @@
             border-bottom-right-radius: 10px;
             width: 60px;
             cursor: pointer;
+            transition: all ease 300ms;
+            &:hover {
+                opacity: .8;
+                transition: all ease 300ms;
+            }
             img {
                 width: 10px;
                 height: 13px;
@@ -70,4 +75,9 @@
         }
     }
 
+}
+#map {
+    height: 100vh;
+    position: relative;
+    z-index: 50;
 }

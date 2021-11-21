@@ -1,11 +1,7 @@
 @import 'sass/variable';
 @import 'sass/hero';
+@import 'sass/reponsive';
 
 body {
     font-family: $fontrubik;
-}
-#map {
-    height: 400px;
-    position: relative;
-    z-index: 50;
 }

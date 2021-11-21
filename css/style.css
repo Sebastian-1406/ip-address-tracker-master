@@ -25,25 +25,26 @@
   width: 100%;
   padding: 15px;
   border-radius: 10px;
-  padding-left: 25px;
+  padding-left: 20px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .hero .formulario-buscar [type="search"]::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .hero .formulario-buscar [type="search"]:-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .hero .formulario-buscar [type="search"]::-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .hero .formulario-buscar [type="search"]::placeholder {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .hero .formulario-buscar .boton-buscar {
@@ -59,6 +60,14 @@
   border-bottom-right-radius: 10px;
   width: 60px;
   cursor: pointer;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+}
+
+.hero .formulario-buscar .boton-buscar:hover {
+  opacity: .8;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
 }
 
 .hero .formulario-buscar .boton-buscar img {
@@ -97,13 +106,109 @@
   font-weight: 500;
 }
 
-body {
-  font-family: "Rubik", sans-serif;
-}
-
 #map {
-  height: 400px;
+  height: 100vh;
   position: relative;
   z-index: 50;
+}
+
+@media screen and (min-width: 640px) {
+  .hero h1 {
+    font-size: 1.8em;
+  }
+  .hero .formulario-buscar {
+    width: 70%;
+    margin: 25px auto;
+  }
+  .hero .resultado {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formulario-buscar [type="search"]::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .formulario-buscar [type="search"]:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .formulario-buscar [type="search"]::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .formulario-buscar [type="search"]::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 200px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero .formulario-buscar {
+    width: 40%;
+    margin: 40px auto 40px auto;
+  }
+  .hero .formulario-buscar [type="search"]::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .hero .formulario-buscar [type="search"]:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .hero .formulario-buscar [type="search"]::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .hero .formulario-buscar [type="search"]::placeholder {
+    font-size: 18px;
+  }
+  .hero .resultado {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 0;
+    padding: 40px 30px;
+    width: 85%;
+  }
+  .hero .resultado div {
+    padding: 0 70px 0 30px;
+  }
+  .hero .resultado div:nth-child(2) {
+    border-left: 1px solid #969696;
+    border-right: 1px solid #969696;
+  }
+  .hero .resultado div:nth-child(3) {
+    border-right: 1px solid #969696;
+  }
+  .hero .resultado p {
+    font-size: 0.7em;
+  }
+  .hero .resultado span {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  #map {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #map {
+    height: 100vh;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
